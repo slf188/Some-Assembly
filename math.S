@@ -36,3 +36,15 @@ mul rax, rbx;
 ; let a = 2;
 ; let b = 3;
 ; a = a * b;
+
+; now we are going to try to replicate the slope equation here
+; m is the slope
+; b is the intercept
+; to get any point on the straight line you plug in x into the equation you will get the y coordinate
+; we will try to do y = 2x + 4, where x is 3
+mov rax, 2
+mov rbx, 3
+mov rcx, 4
+
+mul rax, rbx
+add rax, rcx	
